@@ -1,0 +1,20 @@
+File 2: analysis.md
+
+# Log Analysis Findings
+
+## 1. Brute Force Attempt
+- Multiple failed login attempts for user "bob"
+- Source IP: 45.83.21.9
+- Pattern suggests a brute force attack
+
+## 2. Suspicious Admin Activity
+- Admin logged in from internal IP 10.0.0.5
+- Accessed sensitive file: /etc/passwd
+- Deleted log file: /var/log/auth.log
+- This indicates possible compromise or malicious insider activity
+
+## 3. Recommended Actions
+- Block IP 45.83.21.9
+- Reset admin credentials
+- Investigate internal host 10.0.0.5
+- Restore deleted logs from backup
